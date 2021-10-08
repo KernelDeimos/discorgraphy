@@ -1,0 +1,3 @@
+bindings:
+  - symbol: DiscordBot
+    module: ./discord
