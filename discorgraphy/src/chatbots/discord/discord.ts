@@ -1,5 +1,5 @@
 import { Client, Intents, Interaction, Message } from "discord.js";
-import { inject } from "inversify";
+import { inject, injectable } from "inversify";
 import { BootPhase } from "../botapi";
 import { TYPES } from "../../types";
 import { TokenService } from "../../credentials/TokenService";
@@ -12,6 +12,7 @@ export const DISCORD_INTENTS = [
     Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
 ];
 
+@injectable()
 export class DiscordBot {
     private client: Client
     private tokenService: TokenService

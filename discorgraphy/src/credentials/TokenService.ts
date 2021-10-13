@@ -1,9 +1,10 @@
-import { inject } from "inversify";
+import { inject, injectable } from "inversify";
 import * as jsyaml from "js-yaml";
 import * as fs from 'fs';
 import * as filepath from 'path';
 import { TYPES } from "../types"
 
+@injectable()
 export class TokenService {
     private filename: string
     constructor(

@@ -1,11 +1,11 @@
 bindings:
   - symbol: DiscordBot
-    module: ./chatbots/discord
+    module: ./chatbots/discord/discord
   - symbol: TokensFile
     value: "tokens.yml"
   - symbol: Client
     module: 'discord.js'
     args:
-      intents: ['./chatbots/discord', 'DISCORD_INTENTS']
+      intents: ['./chatbots/discord/discord', 'DISCORD_INTENTS']
   - symbol: TokenService
     module: ./credentials/TokenService
