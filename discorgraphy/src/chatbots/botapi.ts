@@ -1,10 +1,10 @@
 // API for connecting bots to Discorgraphy
 
-enum BootPhase {
+export enum BootPhase {
     START_CHATBOT_CLIENTS,
     READY,
 }
 
-interface BotClient {
+export interface BotClient {
     onPhase: (phase: BootPhase) => void
 }

@@ -1,10 +1,16 @@
 {
+  "scripts": {
+    "start": "npx tsc && node dist/start.js"
+  },
   "devDependencies": {
     "typescript": "^4.4.3"
   },
   "dependencies": {
+    "@types/js-yaml": "^4.0.3",
+    "@types/yaml": "^1.9.7",
     "discord.js": "^13.2.0",
     "inversify": "^5.1.1",
+    "js-yaml": "^4.1.0",
     "reflect-metadata": "^0.1.13",
     "yaml": "^1.10.2"
   }
