@@ -3,11 +3,11 @@ import "reflect-metadata";
 import { Container } from "inversify";
 import { TYPES } from "./types";
 
-import { DiscordBot } from "./chatbots/discord/discord";
+import { DiscordBot } from "./chatbots/discord/DiscordBot";
 import { Client } from "discord.js";
 import { TokenService } from "./credentials/TokenService";
 
-import { DISCORD_INTENTS } from "./chatbots/discord/discord";
+import { DISCORD_INTENTS } from "./chatbots/discord/DiscordBot";
 
 const container = new Container();
 

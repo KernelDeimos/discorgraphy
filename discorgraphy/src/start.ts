@@ -1,5 +1,5 @@
 import { BootPhase } from "./chatbots/botapi";
-import { DiscordBot } from "./chatbots/discord/discord";
+import { DiscordBot } from "./chatbots/discord/DiscordBot";
 import { container } from "./inversify.config";
 import { TYPES } from "./types";
 
